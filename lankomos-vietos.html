@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lankomos vietos Šiauliuose – katedra, bažnyčios, muziejai, skulptūros ir kiti įsimintini miesto objektai. Virtualus gidas po Šiaulių lankytinas vietas.">
+  <meta name="keywords" content="Šiauliai lankytinos vietos, katedra, Frenkelio vila, Geležinė lapė, Dviračių muziejus, Auksinis berniukas">
+
+  <meta property="og:title" content="Lankomos vietos Šiauliuose – Virtualios kelionės">
+  <meta property="og:description" content="13 įžymiausių Šiaulių miesto objektų – bažnyčios, muziejai, skulptūros ir istorinės vietos.">
+  <meta property="og:image" content="img/banner.jpg">
+
+  <link rel="canonical" href="lankomos-vietos.html">
+  <link rel="icon" type="image/png" href="img/logo.png">
+
+  <title>Lankomos vietos Šiauliuose – Virtualios kelionės</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <nav class="sidebar" id="sidebar" aria-label="Pagrindinis meniu">
+    <button class="sidebar-close" id="sidebarClose" aria-label="Uždaryti meniu">✕</button>
+    <div class="sidebar-logo">
+      <a href="index.html"><img src="img/logo.png" alt="ikelionės logotipas" loading="lazy"></a>
+    </div>
+    <div class="sidebar-section open">
+      <div class="sidebar-header">
+        <a href="lankomos-vietos.html" class="sidebar-title-link">Lankomos vietos Šiauliuose</a>
+        <button class="sidebar-toggle" aria-label="Išskleisti sąrašą"><span class="sidebar-arrow">▾</span></button>
+      </div>
+      <div class="sidebar-links">
+        <a href="lankomos-vietos.html">Šv. Apaštalų Petro ir Pauliaus katedra</a>
+        <a href="lankomos-vietos.html">Šiaulių Šv. Apaštalų Petro ir Povilo cerkvė</a>
+        <a href="lankomos-vietos.html">Geležinė lapė</a>
+        <a href="lankomos-vietos.html">Chaimo Frenkelio vila-muziejus</a>
+        <a href="lankomos-vietos.html">Šiaulių Šv. Jurgio bažnyčia</a>
+        <a href="lankomos-vietos.html">Šiaulių Šv. Ignaco Lojolos bažnyčia</a>
+        <a href="lankomos-vietos.html">Paminklas popiežiui Jonui Pauliui II</a>
+        <a href="lankomos-vietos.html">Turgaus aikštė</a>
+        <a href="lankomos-vietos.html">Dviračių muziejus</a>
+        <a href="lankomos-vietos.html">Auksinis berniukas</a>
+        <a href="lankomos-vietos.html">Grafų Zubovų dvaras</a>
+        <a href="lankomos-vietos.html">Fotografijos muziejus</a>
+        <a href="lankomos-vietos.html">Laikrodis gaidys</a>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-header">
+        <a href="pramone.html" class="sidebar-title-link">Pažintis su pramoniniais Šiauliais</a>
+        <button class="sidebar-toggle" aria-label="Išskleisti sąrašą"><span class="sidebar-arrow">▾</span></button>
+      </div>
+      <div class="sidebar-links">
+        <a href="pramone.html">Saldainių fabrikas Rūta</a>
+        <a href="pramone.html">Baltik vairas</a>
+        <a href="pramone.html">Grafų baldai</a>
+        <a href="pramone.html">Šiaulių oro uostas</a>
+        <a href="pramone.html">Doloop (Putokšnis)</a>
+        <a href="pramone.html">Salda</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="ikelionės – virtualios kelionės Šiauliuose" loading="lazy">
+    </a>
+    <div class="header-right">
+      <div class="access-buttons">
+        <button class="access-btn" id="fontDecrease" aria-label="Sumažinti šriftą">A-</button>
+        <button class="access-btn" id="fontIncrease" aria-label="Padidinti šriftą">A+</button>
+        <button class="access-btn" id="contrastToggle" aria-label="Didelis kontrastas">☾</button>
+      </div>
+      <button class="hamburger" id="menuBtn" aria-label="Atidaryti meniu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Aplankykite ir pamatykite viską Šiauliuose</h1>
+      <p>Sveiki atvykę į virtualios kelionės gidą, kurį naudodami galite drąsiai bei savarankiškai keliauti po Šiaulius ir išgirsti trumpus pasakojimus apie lankytinas vietas.</p>
+    </section>
+
+    <!-- VIDEO -->
+    <div class="video-banner">
+      <div class="video-left">
+        <iframe src="https://www.youtube.com/embed/kxAHUA78kfw" title="Šiaulių lankytinos vietos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-right">
+        <p class="label">Trumpai</p>
+        <h3>Žiūrėti video</h3>
+        <p>Pasakojame apie Šiaulių miesto istoriją ir organizuojame ekskursijas gyvai ir internetu</p>
+        <a href="https://www.youtube.com/@ikeliones3324" target="_blank" rel="noopener noreferrer" class="link-bold">Žiūrėti daugiau video &gt;</a>
+      </div>
+    </div>
+
+    <!-- OBJEKTAI -->
+    <section class="objects-section" id="objektai">
+      <h2>Dažniausiai lankomi objektai</h2>
+      <div class="objects-grid">
+
+        <div class="object-card" data-description="Šiaulių katedra – viena seniausių ir didžiausių bažnyčių Žemaitijoje. Pirmą kartą paminėta 1445 m., ji išgyveno gaisrus, karus ir atstatymus. Šiandien katedra stovi kaip miesto dvasinio gyvenimo centras su įspūdingu baroko stiliaus interjeru.">
+          <div class="thumb"><img src="img/lankomos-vietos/katedra.jpg" alt="Šv. Apaštalų Petro ir Pauliaus katedra Šiauliuose" loading="lazy"></div>
+          <h4>Šv. Apaštalų Petro ir Pauliaus katedra</h4>
+        </div>
+
+        <div class="object-card" data-description="Stačiatikių cerkvė, pastatyta 1909 m., yra vienas ryškiausių rusiško bizantinio stiliaus architektūros pavyzdžių Šiauliuose. Pastatas iš raudonų plytų su būdingais svogūniniais kupolais traukia tiek tikinčiuosius, tiek architektūros mėgėjus.">
+          <div class="thumb"><img src="img/lankomos-vietos/cerkve.jpg" alt="Šiaulių Šv. Apaštalų Petro ir Povilo cerkvė" loading="lazy"></div>
+          <h4>Šiaulių Šv. Apaštalų Petro ir Povilo cerkvė</h4>
+        </div>
+
+        <div class="object-card" data-description="Geležinė lapė – metalinė skulptūra pėsčiųjų bulvare, tapusi vienu iš Šiaulių simbolių. Pagal legendą, lapė saugo miestą ir neša sėkmę kiekvienam, kas paglosto jos nosį. Skulptūra sukurta iš kalto metalo ir puošia miesto centrą.">
+          <div class="thumb"><img src="img/lankomos-vietos/gelezine-lape.jpg" alt="Geležinė lapė – skulptūra Šiauliuose" loading="lazy"></div>
+          <h4>Geležinė lapė</h4>
+        </div>
+
+        <div class="object-card" data-description="Prabangi XIX a. pabaigos vila, pastatyta Šiaulių odos pramonininko Chaimo Frenkelio užsakymu. Šiandien čia veikia muziejus su parodomis, koncertais ir edukacijomis. Parko teritorijoje vasarą vyksta populiarūs kultūriniai renginiai.">
+          <div class="thumb"><img src="img/lankomos-vietos/frenkelio-vila.jpg" alt="Chaimo Frenkelio vila-muziejus Šiauliuose" loading="lazy"></div>
+          <h4>Chaimo Frenkelio vila-muziejus</h4>
+        </div>
+
+        <div class="object-card" data-description="Raudonų plytų bažnyčia su aukštu aštuonkampiu bokštu – vienas iš seniausių Šiaulių sakralinių pastatų. Pirmą kartą paminėta XVI a., bažnyčia buvo ne kartą perstatyta, tačiau išlaikė savo unikalų charakterį ir dvasią.">
+          <div class="thumb"><img src="img/lankomos-vietos/jurgio-baznycia.jpg" alt="Šiaulių Šv. Jurgio bažnyčia" loading="lazy"></div>
+          <h4>Šiaulių Šv. Jurgio bažnyčia</h4>
+        </div>
+
+        <div class="object-card" data-description="Barokinė bažnyčia, pastatyta XVIII a. jėzuitų vienuolių. Fasadą puošia elegantiški piliastrai ir skulptūrinės detalės. Viduje – vertingi dailės kūriniai ir fresko fragmentai, bylojantys apie turtingą miesto kultūros istoriją.">
+          <div class="thumb"><img src="img/lankomos-vietos/lojolos-baznycia.jpg" alt="Šiaulių Šv. Ignaco Lojolos bažnyčia" loading="lazy"></div>
+          <h4>Šiaulių Šv. Ignaco Lojolos bažnyčia</h4>
+        </div>
+
+        <div class="object-card" data-description="Bronzinis paminklas popiežiui Jonui Pauliui II, pastatytas atminimui jo vizito Lietuvoje 1993 m. Skulptūra vaizduoja Šventąjį Tėvą su kryžiumi ir primena jo žodžius apie tikėjimą bei laisvę, pasakytus Lietuvos žmonėms.">
+          <div class="thumb"><img src="img/lankomos-vietos/paminklas-popieziui.jpg" alt="Paminklas popiežiui Jonui Pauliui II Šiauliuose" loading="lazy"></div>
+          <h4>Paminklas popiežiui Jonui Pauliui II</h4>
+        </div>
+
+        <div class="object-card" data-description="Istorinė Šiaulių turgaus aikštė – vieta, kur nuo seno virė prekyba ir miesto gyvenimas. Neseniai atnaujinta aikštė tapo modernia viešąja erdve, tačiau išlaikė istorinį charakterį ir atmosferą su aplinkiniais senaisiais pastatais.">
+          <div class="thumb"><img src="img/lankomos-vietos/turgaus-aikste.jpg" alt="Turgaus aikštė Šiauliuose" loading="lazy"></div>
+          <h4>Turgaus aikštė</h4>
+        </div>
+
+        <div class="object-card" data-description="Vienintelis toks muziejus Lietuvoje! Čia galima pamatyti dviračių evoliuciją nuo XIX a. penny-farthing iki šiuolaikinių modelių. Ekspozicijoje – daugiau nei 100 dviračių, įskaitant retus kolekcinius eksponatus ir interaktyvias parodas.">
+          <div class="thumb"><img src="img/lankomos-vietos/dviraciu-muziejus.jpg" alt="Dviračių muziejus Šiauliuose" loading="lazy"></div>
+          <h4>Dviračių muziejus</h4>
+        </div>
+
+        <div class="object-card" data-description="Nedidelė, bet labai mylima šiauliečių skulptūra pėsčiųjų bulvare. Auksinis berniukas ant kolonos – miesto sėkmės simbolis. Sako, kad palietęs jo pėdą gausi sėkmės. Skulptūra tapo populiariu turistų traukos objektu.">
+          <div class="thumb"><img src="img/lankomos-vietos/auksinis-berniukas.jpg" alt="Auksinis berniukas – skulptūra Šiauliuose" loading="lazy"></div>
+          <h4>Auksinis berniukas</h4>
+        </div>
+
+        <div class="object-card" data-description="Senasis Šiaulių parkas, priklausęs grafų Zubovų giminei. Dvaras su parku yra viena seniausių žaliųjų erdvių mieste, kur amžini medžiai ir romantiškas kraštovaizdis nukelia į XIX amžių. Puiki vieta pasivaikščiojimams ir ramybei.">
+          <div class="thumb"><img src="img/lankomos-vietos/zubovu-dvaras.jpg" alt="Grafų Zubovų dvaras ir parkas Šiauliuose" loading="lazy"></div>
+          <h4>Grafų Zubovų dvaras</h4>
+        </div>
+
+        <div class="object-card" data-description="Šiaulių „Aušros" muziejaus padalinys, skirtas fotografijos menui. Čia eksponuojamos tiek istorinės, tiek šiuolaikinės fotografijos parodos. Muziejus įsikūręs gražiame istoriniame pastate ir pristato unikalias kolekcijas.">
+          <div class="thumb"><img src="img/lankomos-vietos/fotografijos-muziejus.jpg" alt="Fotografijos muziejus Šiauliuose" loading="lazy"></div>
+          <h4>Fotografijos muziejus</h4>
+        </div>
+
+        <div class="object-card" data-description="Mechaninis laikrodis su metaliniu gaidžiu – vienas žinomiausių Šiaulių simbolių pėsčiųjų bulvare. Kas valandą gaidys „pragysta" ir suploja sparnais. Laikrodis tapo populiariausia pasimatymų vieta mieste ir mėgstamas fotografų objektas.">
+          <div class="thumb"><img src="img/lankomos-vietos/laikrodis-gaidys.jpg" alt="Laikrodis gaidys – Šiaulių simbolis" loading="lazy"></div>
+          <h4>Laikrodis gaidys</h4>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Uždaryti">✕</button>
+      <img class="modal-image" id="modalImage" src="" alt="" loading="lazy">
+      <div class="modal-content">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-quote">
+    <p><em>Įprastas keliones darome ypatingas. Mes esame jūsų asmeninis unikalių potyrių vadovas. Žinome, ką geriausia pamatyti mūsų mieste ir ko negalima praleisti lankantis Šiauliuose.</em></p>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Sukurta keliautojams</h3>
+        <p>Pasinaudokite mūsų suasmenintomis rekomendacijomis prieš kelionę ir jos metu, kad gautumėte geriausios kelionės patirties.</p>
+        <p>Tel. informacijai <a href="tel:+37067608524" class="phone">+370 676 08524</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.5.6c-1 .3-1.8 1.1-2 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1 1 1.8 2 2.1 1.9.6 9.5.6 9.5.6s7.6 0 9.5-.6c1-.3 1.8-1.1 2-2.1.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></a>
+          <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0-6.6-5.4-12-12-12S0 5.4 0 12c0 6 4.4 11 10.1 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.6 4.5-4.6 1.3 0 2.6.2 2.6.2v2.9h-1.5c-1.5 0-1.9.9-1.9 1.8V12h3.3l-.5 3.5h-2.8v8.4C19.6 23 24 18 24 12z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Užsakyti gido paslaugą</h3>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/TAVO_ENDPOINT" method="POST">
+          <input type="text" name="vardas" placeholder="Vardas" required aria-label="Vardas">
+          <input type="tel" name="telefonas" placeholder="Telefono numeris" required aria-label="Telefono numeris">
+          <textarea name="zinute" placeholder="Žinutė" required aria-label="Žinutė"></textarea>
+          <div class="form-consent">
+            <input type="checkbox" id="formConsent" required>
+            <label for="formConsent">Sutinku su <a href="privatumo-politika.html" target="_blank" rel="noopener noreferrer">privatumo politika</a></label>
+          </div>
+          <button type="submit" class="btn-send">Siųsti</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <h3>Lankytinos vietos Šiauliuose</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="img/lankomos-vietos/katedra.jpg" alt="Katedra" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/cerkve.jpg" alt="Cerkvė" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/gelezine-lape.jpg" alt="Geležinė lapė" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/frenkelio-vila.jpg" alt="Frenkelio vila" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/dviraciu-muziejus.jpg" alt="Dviračių muziejus" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/laikrodis-gaidys.jpg" alt="Laikrodis gaidys" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ikelionės. Visos teisės saugomos.</span>
+      <a href="privatumo-politika.html">Privatumo politika</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

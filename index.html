@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Virtualios kelionės Šiauliuose – virtualus gidas po Šiaulių miestą. Lankytinos vietos, pramonės objektai, ekskursijos gyvai ir internetu.">
+  <meta name="keywords" content="Šiauliai, turizmas, lankytinos vietos, virtualus gidas, ekskursijos, kelionės">
+  <meta name="author" content="ikelionės">
+
+  <!-- Open Graph (Facebook/Messenger) -->
+  <meta property="og:title" content="Virtualios kelionės Šiauliuose">
+  <meta property="og:description" content="Pažinkite Šiaulius keliaudami internetu – virtualus gidas po miesto lankytinas vietas ir pramonės objektus.">
+  <meta property="og:image" content="img/banner.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="canonical" href="index.html">
+  <link rel="icon" type="image/png" href="img/logo.png">
+
+  <title>Virtualios kelionės Šiauliuose – Pažinkite miestą internetu</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- SIDEBAR OVERLAY -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- SIDEBAR MENIU -->
+  <nav class="sidebar" id="sidebar" aria-label="Pagrindinis meniu">
+    <button class="sidebar-close" id="sidebarClose" aria-label="Uždaryti meniu">✕</button>
+    <div class="sidebar-logo">
+      <a href="index.html"><img src="img/logo.png" alt="ikelionės logotipas" loading="lazy"></a>
+    </div>
+    <div class="sidebar-section open">
+      <div class="sidebar-header">
+        <a href="lankomos-vietos.html" class="sidebar-title-link">Lankomos vietos Šiauliuose</a>
+        <button class="sidebar-toggle" aria-label="Išskleisti sąrašą"><span class="sidebar-arrow">▾</span></button>
+      </div>
+      <div class="sidebar-links">
+        <a href="lankomos-vietos.html">Šv. Apaštalų Petro ir Pauliaus katedra</a>
+        <a href="lankomos-vietos.html">Šiaulių Šv. Apaštalų Petro ir Povilo cerkvė</a>
+        <a href="lankomos-vietos.html">Geležinė lapė</a>
+        <a href="lankomos-vietos.html">Chaimo Frenkelio vila-muziejus</a>
+        <a href="lankomos-vietos.html">Šiaulių Šv. Jurgio bažnyčia</a>
+        <a href="lankomos-vietos.html">Šiaulių Šv. Ignaco Lojolos bažnyčia</a>
+        <a href="lankomos-vietos.html">Paminklas popiežiui Jonui Pauliui II</a>
+        <a href="lankomos-vietos.html">Turgaus aikštė</a>
+        <a href="lankomos-vietos.html">Dviračių muziejus</a>
+        <a href="lankomos-vietos.html">Auksinis berniukas</a>
+        <a href="lankomos-vietos.html">Grafų Zubovų dvaras</a>
+        <a href="lankomos-vietos.html">Fotografijos muziejus</a>
+        <a href="lankomos-vietos.html">Laikrodis gaidys</a>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-header">
+        <a href="pramone.html" class="sidebar-title-link">Pažintis su pramoniniais Šiauliais</a>
+        <button class="sidebar-toggle" aria-label="Išskleisti sąrašą"><span class="sidebar-arrow">▾</span></button>
+      </div>
+      <div class="sidebar-links">
+        <a href="pramone.html">Saldainių fabrikas Rūta</a>
+        <a href="pramone.html">Baltik vairas</a>
+        <a href="pramone.html">Grafų baldai</a>
+        <a href="pramone.html">Šiaulių oro uostas</a>
+        <a href="pramone.html">Doloop (Putokšnis)</a>
+        <a href="pramone.html">Salda</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="ikelionės – virtualios kelionės Šiauliuose" loading="lazy">
+    </a>
+    <div class="header-right">
+      <div class="access-buttons">
+        <button class="access-btn" id="fontDecrease" aria-label="Sumažinti šriftą" title="Sumažinti šriftą">A-</button>
+        <button class="access-btn" id="fontIncrease" aria-label="Padidinti šriftą" title="Padidinti šriftą">A+</button>
+        <button class="access-btn" id="contrastToggle" aria-label="Didelis kontrastas" title="Didelis kontrastas">☾</button>
+      </div>
+      <button class="hamburger" id="menuBtn" aria-label="Atidaryti meniu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BANNER -->
+    <div class="banner-section">
+      <img src="img/banner.jpg" alt="Keliaukite Šiauliuose su virtualiu gidu – žemėlapis su lankytinų vietų iliustracijomis" loading="lazy">
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Pažinkite Šiaulius keliaudami internetu</h1>
+      <p>Sveiki atvykę į virtualios kelionės gidą, kurį naudodami galite drąsiai bei savarankiškai keliauti po Šiaulius ir išgirsti trumpus pasakojimus apie lankytinas vietas.</p>
+    </section>
+
+    <!-- PATARIMAI -->
+    <section class="patarimai">
+      <div class="section-title">
+        <h2>Patarimai, jūsų kelionei</h2>
+        <p class="subtitle">Keliaukite matykite ir klausykitės</p>
+      </div>
+      <div class="articles">
+        <article class="article-card">
+          <h3>Įžymiausių Šiaulių miesto objektų gidas: ar viską žinome?</h3>
+          <p>Mes įpratę miestą matyti paviršutiniškai – gatvės, pastatai, žmonės. Tačiau miestas yra gyvas, jis kuriamas kasdien ne tik pastatais, skulptūromis ar želdiniais, bet ir miestiečių puoselėjamomis tradicijomis. Šiaulių veidą kuria ir pramonės įmonės, kurių yra ir šimtamečių, ir sulaukusių brandžios jaunystės – pradėjusių veiklą po Lietuvos nepriklausomybės atkūrimo. Būtent su besikeičiančiais Šiauliais ir verta susipažinti.</p>
+          <a href="lankomos-vietos.html" class="read-more">Skaityti daugiau &gt;</a>
+        </article>
+        <article class="article-card">
+          <h3>Pažintis su pramoniniais Šiauliais – objektais, į kuriuos taip paprastai nepateksite</h3>
+          <p>Interneto svetainėje lankytojai ras žemėlapį ne tik su ryškiausiais Šiaulių miesto objektais – Katedra, Saulės laikrodžio aikšte, Talkšos ežeru, pėsčiųjų bulvaro akcentais, bet ir pramoniniais objektais. Paspaudus atitinkamą objektą, šis „prabils" – žmogus matys filmuotą medžiagą, kur bus pateikta ne tik objekto išorė, bet ir vidus. Taip galima tyrinėti miestą ir neišeinant iš namų.</p>
+          <a href="pramone.html" class="read-more">Skaityti daugiau &gt;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- APIE MUS -->
+    <div class="about-header">
+      <h2>Iš arčiau apie mus</h2>
+      <p class="subtitle">Pradėkite nuo čia</p>
+    </div>
+
+    <!-- VIDEO 1 -->
+    <div class="video-banner">
+      <div class="video-left">
+        <!-- PAKEISK: įdėk savo YouTube nuorodą -->
+        <iframe src="https://www.youtube.com/embed/kxAHUA78kfw" title="Video apie Šiaulius" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-right">
+        <p class="label">Trumpai</p>
+        <h3>Žiūrėti video</h3>
+        <p>Pasakojame apie Šiaulių miesto istoriją ir organizuojame ekskursijas gyvai ir internetu</p>
+        <a href="lankomos-vietos.html" class="link-bold">Skaityti daugiau &gt;</a>
+      </div>
+    </div>
+
+    <!-- ATRASKITE -->
+    <section class="discover">
+      <div class="discover-text">
+        <h2>Atraskite Šiaulius iš naujo</h2>
+        <p>Siūlome virtualų gidą, kad kiekvienas, net ir neišeidamas iš namų, galėtų sužinoti apie žymius miesto pastatus, skulptūras, verslo įmones – gamyklas, fabrikus.</p>
+      </div>
+      <div class="discover-image">
+        <img src="img/lankomos-vietos/katedra.jpg" alt="Šiaulių katedra – viena ryškiausių miesto lankytinų vietų" loading="lazy">
+      </div>
+    </section>
+
+    <!-- DALINUOSI -->
+    <section class="text-block">
+      <h2>Dalinuosi sukauptomis žiniomis</h2>
+      <p>„Visko turime sočiai – ne tik Šiaulių katedrą, neseniai Prisikėlimo aikštėje išdygusią „raudų sieną", garsųjį pėsčiųjų bulvarą ar romantikų pamėgtą pasimatymų vietą – laikrodį su metaliniu gaidžiu. Garsėjame skulptūromis, fontanais, Fotografijos, Dviračių ar Katinų muziejais... Kalba kiekvienas Šiaulių miesto kampas!" – susižavėjusi kalba Irena.</p>
+      <p>Apie įsimintinas miesto vietas moteris gali pasakoti daug, ypač tas, kurias išlandžiojo vaikystėje. Senasis parkas (Zubovų dvaras), vaizduotę audrinančios senosios miesto kapinės prie Talkšos ežero, Kaštonų alėja – tai vietos, sugrąžinančios Ireną į vaikystę ir prikeliančios šūsnį prisiminimų.</p>
+      <p>„Dirbdama su jaunimu pastebėjau, kad dažnai jie yra abejingi, nesidomi miestu: važiuodami autobusu tik naršo internete, susirašinėja su draugais, skaito įrašus socialiniuose tinkluose ar žiūri „YouTube" juokingus filmukus. O juk galėtų laiką leisti naudingiau. Taigi, artimųjų padedama ir palaikoma, nusprendžiau savo patirtį panaudoti – sukurti virtualų miesto gidą", – pasakoja I.Sorokinienė.</p>
+    </section>
+
+    <!-- VIDEO 2 -->
+    <div class="video-banner">
+      <div class="video-left">
+        <!-- PAKEISK: įdėk savo YouTube nuorodą -->
+        <iframe src="https://www.youtube.com/embed/N4WXD-OTbDY" title="Video apie Šiaulių pramonę" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-right">
+        <p class="label">Trumpai</p>
+        <h3>Žiūrėti video</h3>
+        <p>Siūlome virtualų gidą, kad kiekvienas, net ir neišeidamas iš namų, galėtų sužinoti apie žymius miesto pastatus, skulptūras, verslo įmones – gamyklas, fabrikus.</p>
+      </div>
+    </div>
+
+    <!-- ILGAS TEKSTAS -->
+    <section class="text-block">
+      <p>Virtualus gidas – tai dar viena mano dalinimosi sukaupta patirtimi forma. Noriu, kad kuo daugiau šiauliečių ar miesto svečių susipažintų su miestu, jo istorija. Kad užėję į internetinę svetainę ir pamatę žemėlapį, galėtų paspausti dominantį objektą, ir šis „atgytų" – žmogus matytų filmuotą medžiagą su visa įdomiausia ir svarbiausia informacija, būtų parodyta ne tik objekto išorė, bet ir vidus. Taip galima tyrinėti miestą ir neišeinant iš namų.</p>
+      <p>Idėjos virsta realybe: mano istorijos mokytojos nuolatinis skatinimas pamatyti miestą tyrinėtojo žvilgsniu po daugiau nei pusės amžiaus bus išpildytas ir prieinamas visiems – tuo labiausiai džiaugiuosi. Ir labai dėkoju savo šeimai, vaikams, marčioms – būtent jie paskatino to imtis. Kai turi tokią palaikymo komandą, gali padaryti absoliučiai viską – net ir savo sukauptą patirtį pateikti moderniai!</p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER CITATA -->
+  <div class="footer-quote">
+    <p><em>Įprastas keliones darome ypatingas. Mes esame jūsų asmeninis unikalių potyrių vadovas. Žinome, ką geriausia pamatyti mūsų mieste ir ko negalima praleisti lankantis Šiauliuose.</em></p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Sukurta keliautojams</h3>
+        <p>Pasinaudokite mūsų suasmenintomis rekomendacijomis prieš kelionę ir jos metu, kad gautumėte geriausios kelionės patirties.</p>
+        <p>Siūlome smagią kelionę bet kokio amžiaus individualistams ir pagal skonį.</p>
+        <p>Tel. informacijai <a href="tel:+37067608524" class="phone">+370 676 08524</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.5.6c-1 .3-1.8 1.1-2 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1 1 1.8 2 2.1 1.9.6 9.5.6 9.5.6s7.6 0 9.5-.6c1-.3 1.8-1.1 2-2.1.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0-6.6-5.4-12-12-12S0 5.4 0 12c0 6 4.4 11 10.1 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.6 4.5-4.6 1.3 0 2.6.2 2.6.2v2.9h-1.5c-1.5 0-1.9.9-1.9 1.8V12h3.3l-.5 3.5h-2.8v8.4C19.6 23 24 18 24 12z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Užsakyti gido paslaugą</h3>
+        <!-- PAKEISK: action URL į savo Formspree endpoint -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/TAVO_ENDPOINT" method="POST">
+          <input type="text" name="vardas" placeholder="Vardas" required aria-label="Vardas">
+          <input type="tel" name="telefonas" placeholder="Telefono numeris" required aria-label="Telefono numeris">
+          <textarea name="zinute" placeholder="Žinutė" required aria-label="Žinutė"></textarea>
+          <div class="form-consent">
+            <input type="checkbox" id="formConsent" required>
+            <label for="formConsent">Sutinku su <a href="privatumo-politika.html" target="_blank" rel="noopener noreferrer">privatumo politika</a></label>
+          </div>
+          <button type="submit" class="btn-send">Siųsti</button>
+        </form>
+      </div>
+
+      <div class="footer-col">
+        <h3>Lankytinos vietos Šiauliuose</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="img/lankomos-vietos/katedra.jpg" alt="Katedra" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/cerkve.jpg" alt="Cerkvė" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/gelezine-lape.jpg" alt="Geležinė lapė" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/frenkelio-vila.jpg" alt="Frenkelio vila" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/dviraciu-muziejus.jpg" alt="Dviračių muziejus" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/laikrodis-gaidys.jpg" alt="Laikrodis gaidys" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 ikelionės. Visos teisės saugomos.</span>
+      <a href="privatumo-politika.html">Privatumo politika</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
