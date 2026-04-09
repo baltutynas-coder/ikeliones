@@ -1,54 +1,45 @@
-/* ============================================
-   VIRTUALIOS KELIONĖS ŠIAULIUOSE
-   data.js – visų objektų duomenys
-   ============================================ */
-
-const OBJECTS = {
-
-  // ==========================================
-  // LANKOMOS VIETOS (13)
-  // ==========================================
+var OBJECTS = {
 
   "katedra": {
-    title: "Šv. Apaštalų Petro ir Pauliaus katedra",
+    title: "\u0160v. Apa\u0161tal\u0173 Petro ir Pauliaus katedra",
     category: "lankomos-vietos",
     image: "img/lankomos-vietos/katedra.jpg",
     youtube: "",
     description: [
-      "Šiaulių katedra – viena seniausių ir didžiausių bažnyčių Žemaitijoje, pirmą kartą paminėta 1445 metais. Per savo ilgą istoriją ji išgyveno daugybę gaisrų, karų ir atstatymų, tačiau kiekvieną kartą atgimė dar gražesnė.",
-      "Bažnyčia stovi pačiame miesto centre ir yra renesanso epochos architektūros paminklas. Jos interjere dominuoja baroko stilius – puošnūs altoriai, vertingi paveikslai ir skulptūros. Bokšto aukštis siekia 70 metrų, o nuo jo atsiveria nuostabi miesto panorama.",
-      "Katedra nėra tik religinis pastatas – ji yra Šiaulių dvasinio ir kultūrinio gyvenimo centras, pritraukiantis tiek tikinčiuosius, tiek architektūros mėgėjus ir turistus iš viso pasaulio."
+      "\u0160iauli\u0173 katedra \u2013 viena seniausi\u0173 ir did\u017Eiausi\u0173 ba\u017Enyci\u0173 \u017Demaitijoje, pirm\u0105 kart\u0105 pamin\u0117ta 1445 metais. Per savo ilg\u0105 istorij\u0105 ji i\u0161gyveno daugyb\u0119 gaisr\u0173, kar\u0173 ir atstatym\u0173.",
+      "Ba\u017Enycia stovi pa\u010Diame miesto centre ir yra renesanso epochos architekt\u016Bros paminklas. Jos interjere dominuoja baroko stilius \u2013 puo\u0161n\u016Bs altoriai, vertingi paveikslai ir skulpt\u016Bros.",
+      "Katedra yra \u0160iauli\u0173 dvasinio ir kult\u016Brinio gyvenimo centras, pritraukiantis tiek tikin\u010Diuosius, tiek architekt\u016Bros m\u0117g\u0117jus ir turistus i\u0161 viso pasaulio."
     ],
-    address: "Aušros al. 3, Šiauliai",
-    funFact: "Katedros bokštas yra aukščiausias pastatas Šiaulių senamiestyje – nuo jo matosi net 30 km aplink."
+    address: "Au\u0161ros al. 3, \u0160iauliai",
+    funFact: "Katedros bok\u0161tas yra auk\u0161\u010Diausias pastatas \u0160iauli\u0173 senamiestyje \u2013 nuo jo matosi net 30 km aplink."
   },
 
   "cerkve": {
-    title: "Šiaulių Šv. Apaštalų Petro ir Povilo cerkvė",
+    title: "\u0160iauli\u0173 \u0160v. Apa\u0161tal\u0173 Petro ir Povilo cerkv\u0117",
     category: "lankomos-vietos",
     image: "img/lankomos-vietos/cerkve.jpg",
     youtube: "",
     description: [
-      "Stačiatikių cerkvė, pastatyta 1909 metais, yra vienas ryškiausių rusiško bizantinio stiliaus architektūros pavyzdžių Šiauliuose. Pastatas iš raudonų plytų su būdingais svogūniniais kupolais traukia tiek tikinčiuosius, tiek architektūros mėgėjus.",
-      "Cerkvė buvo pastatyta Šiaulių rusų stačiatikių bendruomenės reikmėms, kai miestas priklausė Rusijos imperijai. Nepaisant istorinių suiručių – dviejų pasaulinių karų ir sovietmečio – pastatas išliko beveik nepakitęs.",
-      "Šiandien cerkvė yra veikianti stačiatikių šventovė ir svarbus architektūrinis paminklas, primenantis Šiaulių daugiakultūrę praeitį."
+      "Sta\u010Diatiki\u0173 cerkv\u0117, pastatyta 1909 metais, yra vienas ry\u0161kiausi\u0173 rusi\u0161ko bizantinio stiliaus architekt\u016Bros pavyzd\u017Ei\u0173 \u0160iauliuose.",
+      "Cerkv\u0117 buvo pastatyta \u0160iauli\u0173 rus\u0173 sta\u010Diatiki\u0173 bendruomen\u0117s reikm\u0117ms, kai miestas priklaus\u0117 Rusijos imperijai.",
+      "\u0160iandien cerkv\u0117 yra veikianti sta\u010Diatiki\u0173 \u0161ventov\u0117 ir svarbus architekt\u016Brinis paminklas."
     ],
-    address: "Tilžės g. 59, Šiauliai",
-    funFact: "Tai viena iš nedaugelio raudonų plytų stačiatikių cerkvių Lietuvoje, išlaikiusi originalią architektūrą."
+    address: "Til\u017E\u0117s g. 59, \u0160iauliai",
+    funFact: "Tai viena i\u0161 nedaugelio raudon\u0173 plyt\u0173 sta\u010Diatiki\u0173 cerkvi\u0173 Lietuvoje, i\u0161laikiusi originali\u0105 architekt\u016Br\u0105."
   },
 
   "gelezine-lape": {
-    title: "Geležinė lapė",
+    title: "Gele\u017Ein\u0117 lap\u0117",
     category: "lankomos-vietos",
     image: "img/lankomos-vietos/gelezine-lape.jpg",
     youtube: "",
     description: [
-      "Geležinė lapė – didžiausia gyvūno skulptūra Lietuvoje, tapusi vienu ryškiausių Šiaulių simbolių. Skulptūros svoris – beveik 7 tonos, ilgis – apie 15 metrų, aukštis – 6,6 metro!",
-      "Tai šiauliečio dizainerio Viliaus Purono kūrinys, skirtas Lietuvos vardo tūkstantmečiui paminėti. Dizaineris juokavo, kad jei Vilnius turi legendą apie geležinį vilką, tai Šiauliai galės didžiuotis geležine lape – apsukrumo ir išminties simboliu.",
-      "Skulptūros plieninėje širdyje paslėpta laiko kapsulė su žinute ateities kartoms. Pagal tradiciją, kiekvienas, kas paglosto lapės nosį, sulaukia sėkmės."
+      "Gele\u017Ein\u0117 lap\u0117 \u2013 did\u017Eiausia gyv\u016Bno skulpt\u016Bra Lietuvoje, tapusi vienu ry\u0161kiausi\u0173 \u0160iauli\u0173 simboli\u0173. Skulpt\u016Bros svoris \u2013 beveik 7 tonos, ilgis \u2013 apie 15 metr\u0173, auk\u0161tis \u2013 6,6 metro!",
+      "Tai \u0161iaulie\u010Dio dizainerio Viliaus Purono k\u016Brinys, skirtas Lietuvos vardo t\u016Bkstantme\u010Diui pamin\u0117ti.",
+      "Skulpt\u016Bros plienin\u0117je \u0161irdyje pasl\u0117pta laiko kapsul\u0117 su \u017Einute ateities kartoms. Pagal tradicij\u0105, kas paglosto lap\u0117s nos\u012F, sulaukia s\u0117km\u0117s."
     ],
-    address: "Ežero g., Šiauliai",
-    funFact: "Lapės širdyje slepiasi laiko kapsulė – ją atidaryti planuojama tik po 100 metų!"
+    address: "E\u017Eero g., \u0160iauliai",
+    funFact: "Lap\u0117s \u0161irdyje slepiasi laiko kapsul\u0117 \u2013 j\u0105 atidaryti planuojama tik po 100 met\u0173!"
   },
 
   "frenkelio-vila": {
@@ -57,82 +48,82 @@ const OBJECTS = {
     image: "img/lankomos-vietos/frenkelio-vila.jpg",
     youtube: "",
     description: [
-      "Prabangi XIX amžiaus pabaigos vila, pastatyta Šiaulių odos pramonininko Chaimo Frenkelio užsakymu. Tai moderno architektūros statinys, žavintis interjere išlikusia medžio apdaila, puošniais lipdiniais ir tapybos fragmentais.",
-      "Vila yra viena iš populiariausių kultūrinio turizmo vietų Šiaurės Lietuvoje. Dviejų aukštų viloje įrengta stilizuota muziejinė ekspozicija, atspindinti turtingą dvaro gyvenimą ir kultūrinius poreikius.",
-      "Parko teritorijoje vasarą vyksta populiarūs kultūriniai renginiai, koncertai ir festivaliai. Chaimo Frenkelio vila – vienas brangiausių Šiaulių karūnos deimantų."
+      "Prabangi XIX am\u017Eiaus pabaigos vila, pastatyta \u0160iauli\u0173 odos pramonininko Chaimo Frenkelio u\u017Esakymu.",
+      "Vila yra viena i\u0161 populiariausi\u0173 kult\u016Brinio turizmo viet\u0173 \u0160iaur\u0117s Lietuvoje. Dviej\u0173 auk\u0161t\u0173 viloje \u012Frengta muziejin\u0117 ekspozicija.",
+      "Parko teritorijoje vasar\u0105 vyksta popular\u016Bs kult\u016Briniai renginiai, koncertai ir festivaliai."
     ],
-    address: "Vilniaus g. 74, Šiauliai",
-    funFact: "Chaimas Frenkelis buvo vienas turtingiausių Šiaulių verslininkų – jo odos fabrikas buvo didžiausias Europoje."
+    address: "Vilniaus g. 74, \u0160iauliai",
+    funFact: "Chaimas Frenkelis buvo vienas turtingiausi\u0173 \u0160iauli\u0173 verslininku \u2013 jo odos fabrikas buvo did\u017Eiausias Europoje."
   },
 
   "jurgio-baznycia": {
-    title: "Šiaulių Šv. Jurgio bažnyčia",
+    title: "\u0160iauli\u0173 \u0160v. Jurgio ba\u017Eny\u010Dia",
     category: "lankomos-vietos",
     image: "img/lankomos-vietos/jurgio-baznycia.jpg",
     youtube: "",
     description: [
-      "Raudonų plytų bažnyčia su aukštu aštuonkampiu bokštu – vienas seniausių Šiaulių sakralinių pastatų. Pirmą kartą paminėta XVI amžiuje, bažnyčia buvo ne kartą perstatyta ir atnaujinta.",
-      "Pastato architektūroje matomi neogotikos bruožai – smailėjantys langai, dekoratyviniai plytų ornamentai ir masyvus bokštas su mažu svogūniniu kupolu viršūnėje. Po stogu eina būdingas arkadų frizas.",
-      "Bažnyčia iki šiol yra veikianti parapija ir svarbus Šiaulių sakralinis pastatas, pritraukiantis tiek tikinčiuosius, tiek architektūros entuziastus."
+      "Raudon\u0173 plyt\u0173 ba\u017Eny\u010Dia su auk\u0161tu a\u0161tuonkampiu bok\u0161tu \u2013 vienas seniausi\u0173 \u0160iauli\u0173 sakralini\u0173 pastat\u0173.",
+      "Pastato architekt\u016Broje matomi neogotikos bruo\u017Eai \u2013 smail\u0117jantys langai ir dekoratyviniai plyt\u0173 ornamentai.",
+      "Ba\u017Eny\u010Dia iki \u0161iol yra veikianti parapija ir svarbus \u0160iauli\u0173 sakralinis pastatas."
     ],
-    address: "S. Daukanto g., Šiauliai",
-    funFact: "Tai viena iš nedaugelio bažnyčių Šiauliuose, kurios fasadas puoštas dekoratyviniu plytų frizų."
+    address: "S. Daukanto g., \u0160iauliai",
+    funFact: "Tai viena i\u0161 nedaugelio ba\u017Eny\u010Di\u0173 \u0160iauliuose, kurios fasadas puo\u0161tas dekoratyviniu plyt\u0173 fri\u017E\u0173."
   },
 
   "lojolos-baznycia": {
-    title: "Šiaulių Šv. Ignaco Lojolos bažnyčia",
+    title: "\u0160iauli\u0173 \u0160v. Ignaco Lojolos ba\u017Eny\u010Dia",
     category: "lankomos-vietos",
     image: "img/lankomos-vietos/lojolos-baznycia.jpg",
     youtube: "",
     description: [
-      "Barokinė bažnyčia, pastatyta XVIII amžiuje jėzuitų vienuolių. Tai vienas gražiausių baroko stiliaus pastatų Šiauliuose, kurio fasadą puošia elegantiški piliastrai ir skulptūrinės detalės.",
-      "Bažnyčios viduje – vertingi dailės kūriniai, freskų fragmentai ir puošnūs altoriai, bylojantys apie turtingą miesto kultūros istoriją. Jėzuitai čia ne tik meldėsi, bet ir steigė mokyklas bei skleidė švietimą.",
-      "Šiandien bažnyčia yra svarbus architektūrinis ir istorinis paminklas, primenantis apie jėzuitų ordino veiklą Lietuvoje ir jų indėlį į miesto kultūrinį gyvenimą."
+      "Barokin\u0117 ba\u017Eny\u010Dia, pastatyta XVIII am\u017Eiuje j\u0117zuit\u0173 vienuoli\u0173. Tai vienas gra\u017Eiausi\u0173 baroko stiliaus pastat\u0173 \u0160iauliuose.",
+      "Ba\u017Eny\u010Dios viduje \u2013 vertingi dail\u0117s k\u016Briniai ir fresk\u0173 fragmentai.",
+      "\u0160iandien ba\u017Eny\u010Dia yra svarbus architekt\u016Brinis paminklas, primenantis apie j\u0117zuit\u0173 ordino veikl\u0105 Lietuvoje."
     ],
-    address: "Vilniaus g. 2, Šiauliai",
-    funFact: "Jėzuitai Šiauliuose įkūrė vieną pirmųjų mokyklų mieste, kuri veikė šalia šios bažnyčios."
+    address: "Vilniaus g. 2, \u0160iauliai",
+    funFact: "J\u0117zuitai \u0160iauliuose \u012Fk\u016Br\u0117 vien\u0105 pirm\u0173j\u0173 mokykl\u0173 mieste."
   },
 
   "paminklas-popieziui": {
-    title: "Paminklas popiežiui Jonui Pauliui II",
+    title: "Paminklas popie\u017Eiui Jonui Pauliui II",
     category: "lankomos-vietos",
     image: "img/lankomos-vietos/paminklas-popieziui.jpg",
     youtube: "",
     description: [
-      "Bronzinis paminklas popiežiui Jonui Pauliui II, pastatytas prisimenant jo istorinį vizitą Lietuvoje 1993 metais. Tai buvo pirmasis popiežiaus apsilankymas Baltijos šalyse po Nepriklausomybės atkūrimo.",
-      "Skulptūra vaizduoja Šventąjį Tėvą su kryžiumi – jis stovi ant akmeninio postamento su įrašais. Paminklas primena jo žodžius apie tikėjimą, laisvę ir viltį, pasakytus Lietuvos žmonėms.",
-      "Vieta tapo svarbia piligriminės kelionės stotele ir mėgstama šiauliečių susitikimų erdve. Paminklas simbolizuoja Šiaulių dvasinę tradiciją ir tikėjimo svarbą miesto gyvenime."
+      "Bronzinis paminklas popie\u017Eiui Jonui Pauliui II, pastatytas prisimenant jo istorin\u012F vizit\u0105 Lietuvoje 1993 metais.",
+      "Skulpt\u016Bra vaizduoja \u0160vent\u0105j\u012F T\u0117v\u0105 su kry\u017Eiumi ant akmeninio postamento.",
+      "Vieta tapo svarbia piligrimines kelion\u0117s stotele ir m\u0117gstama \u0161iaulie\u010Di\u0173 susitikimerdve."
     ],
-    address: "Tilžės g., Šiauliai",
-    funFact: "Jonas Paulius II 1993 m. aplankė Kryžių kalną ir pavadino jį 'vilties kalnu'."
+    address: "Til\u017E\u0117s g., \u0160iauliai",
+    funFact: "Jonas Paulius II 1993 m. aplank\u0117 Kry\u017Ei\u0173 kaln\u0105 ir pavadino j\u012F vilties kalnu."
   },
 
   "turgaus-aikste": {
-    title: "Turgaus aikštė",
+    title: "Turgaus aik\u0161t\u0117",
     category: "lankomos-vietos",
     image: "img/lankomos-vietos/turgaus-aikste.jpg",
     youtube: "",
     description: [
-      "Istorinė Šiaulių turgaus aikštė – vieta, kur nuo seniausių laikų virė prekyba ir miesto gyvenimas. Čia susitikdavo pirkliai, amatininkai ir miestiečiai, čia skelbdavo svarbias žinias.",
-      "Neseniai atnaujinta aikštė tapo modernia viešąja erdve, tačiau išlaikė istorinį charakterį. Aplink aikštę stovi seni pastatai, menantys tarpukario Šiaulių architektūrą.",
-      "Šiandien aikštė yra populiari pasivaikščiojimų ir renginių vieta – čia vyksta mugės, festivaliai ir miesto šventės. Tai tikra Šiaulių senamiesčio širdis."
+      "Istorin\u0117 \u0160iauli\u0173 turgaus aik\u0161t\u0117 \u2013 vieta, kur nuo seniausi\u0173 laik\u0173 vir\u0117 prekyba ir miesto gyvenimas.",
+      "Neseniai atnaujinta aik\u0161t\u0117 tapo modernia vie\u0161\u0105ja erdve, ta\u010Diau i\u0161laik\u0117 istorin\u012F charakter\u012F.",
+      "\u0160iandien aik\u0161t\u0117 yra populiari pasivaiksciojimu ir rengini\u0173 vieta."
     ],
-    address: "Turgaus a., Šiauliai",
-    funFact: "Viduramžiais turgaus aikštėje stovėjo gėdos stulpas – prie jo buvo pririšami nusikaltėliai."
+    address: "Turgaus a., \u0160iauliai",
+    funFact: "Viduramziais turgaus aiksteje stovejo gedos stulpas."
   },
 
   "dviraciu-muziejus": {
-    title: "Dviračių muziejus",
+    title: "Dvira\u010Di\u0173 muziejus",
     category: "lankomos-vietos",
     image: "img/lankomos-vietos/dviraciu-muziejus.jpg",
     youtube: "",
     description: [
-      "Vienintelis specializuotas dviračių istorijai skirtas muziejus Lietuvoje! Čia galima pamatyti dviračių evoliuciją nuo XIX amžiaus penny-farthing iki šiuolaikinių modelių.",
-      "Ekspozicijoje – daugiau kaip 100 dviračių, įskaitant retus kolekcinius eksponatus. Muziejuje dera tradicinės ekspozicijos ir naujausios technologijos – kiekvienas lankytojas tampa aktyviu dalyviu.",
-      "Muziejus įsikūręs Vilniaus gatvėje ir siūlo ne tik apžiūrėti eksponatus, bet ir interaktyvias edukacines programas. Puiki vieta visai šeimai!"
+      "Vienintelis specializuotas dvira\u010Di\u0173 istorijai skirtas muziejus Lietuvoje!",
+      "Ekspozicijoje \u2013 daugiau kaip 100 dvira\u010Di\u0173, \u012Fskaitant retus kolekcinius eksponatus.",
+      "Muziejus si\u016Blo interaktyvias edukacines programas visai \u0161eimai."
     ],
-    address: "Vilniaus g. 139, Šiauliai",
-    funFact: "Muziejuje saugomas seniausias dviratis Lietuvoje, pagamintas XIX amžiaus pabaigoje."
+    address: "Vilniaus g. 139, \u0160iauliai",
+    funFact: "Muziejuje saugomas seniausias dviratis Lietuvoje, pagamintas XIX am\u017Eiaus pabaigoje."
   },
 
   "auksinis-berniukas": {
@@ -141,26 +132,26 @@ const OBJECTS = {
     image: "img/lankomos-vietos/auksinis-berniukas.jpg",
     youtube: "",
     description: [
-      "Nedidelė, bet labai mylima šiauliečių skulptūra pėsčiųjų bulvare. Auksinis berniukas ant kolonos – miesto sėkmės simbolis ir vienas atpažįstamiausių Šiaulių ženklų.",
-      "Skulptūra vaizduoja mažą berniuką, stovintį ant dekoratyvios kolonos. Pagal tradiciją, palietęs jo pėdą gausi sėkmės – todėl skulptūros apačia visada blizga nuo daugelio rankų prisilietimų.",
-      "Auksinis berniukas tapo populiariu turistų traukos objektu ir mėgstama fotosesijų vieta. Jis yra neatsiejama Šiaulių pėsčiųjų bulvaro dalis."
+      "Nedidel\u0117, bet labai mylima \u0161iaulie\u010Di\u0173 skulpt\u016Bra p\u0117s\u010Di\u0173j\u0173 bulvare. Auksinis berniukas ant kolonos \u2013 miesto s\u0117km\u0117s simbolis.",
+      "Pagal tradicij\u0105, paliet\u0119s jo p\u0117d\u0105 gausi s\u0117km\u0117s.",
+      "Auksinis berniukas tapo populiariu turist\u0173 traukos objektu ir m\u0117gstama fotosesij\u0173 vieta."
     ],
-    address: "Vilniaus g., Šiauliai",
-    funFact: "Berniuko pėda blizga todėl, kad tūkstančiai žmonių ją liečia tikėdamiesi sėkmės!"
+    address: "Vilniaus g., \u0160iauliai",
+    funFact: "Berniuko p\u0117da blizga, nes t\u016Bkstan\u010Diai \u017Emoni\u0173 j\u0105 lie\u010Dia tik\u0117damiesi s\u0117km\u0117s!"
   },
 
   "zubovu-dvaras": {
-    title: "Grafų Zubovų dvaras",
+    title: "Graf\u0173 Zubov\u0173 dvaras",
     category: "lankomos-vietos",
     image: "img/lankomos-vietos/zubovu-dvaras.jpg",
     youtube: "",
     description: [
-      "Senasis Šiaulių parkas, priklausęs grafų Zubovų giminei – viena seniausių ir gražiausių žaliųjų erdvių mieste. Dvaro parkas buvo įkurtas XIX amžiuje ir iki šiol žavi savo romantišku kraštovaizdžiu.",
-      "Parke auga šimtamečiai medžiai – ąžuolai, liepos ir klevai, kurie sukuria unikalią atmosferą bet kuriuo metų laiku. Čia galima rasti retus augalų egzempliorius ir pasimėgauti gamtos ramybe.",
-      "Neseniai parkas buvo atnaujintas – atsirado nauji takai, apšvietimas ir poilsio zonos. Tai puiki vieta pasivaikščiojimams, romantiškai pasimatymams ir šeimos poilsiui."
+      "Senasis \u0160iauli\u0173 parkas, priklaus\u0119s graf\u0173 Zubov\u0173 giminei \u2013 viena seniausi\u0173 \u017Eali\u0173j\u0173 erdvi\u0173 mieste.",
+      "Parke auga \u0161imtame\u010Diai med\u017Eiai \u2013 \u0105\u017Euolai, liepos ir klevai.",
+      "Neseniai parkas buvo atnaujintas \u2013 atsirado nauji takai ir poilsio zonos."
     ],
-    address: "Zubovų g., Šiauliai",
-    funFact: "Parke auga ąžuolas, kurio amžius siekia daugiau nei 200 metų!"
+    address: "Zubov\u0173 g., \u0160iauliai",
+    funFact: "Parke auga \u0105\u017Euolas, kurio am\u017Eius siekia daugiau nei 200 met\u0173!"
   },
 
   "fotografijos-muziejus": {
@@ -169,12 +160,12 @@ const OBJECTS = {
     image: "img/lankomos-vietos/fotografijos-muziejus.jpg",
     youtube: "",
     description: [
-      "Šiaulių „Aušros" muziejaus padalinys – vienintelis specializuotas fotografijos meno ir technikos muziejus Lietuvoje. Muziejus saugo ir reprezentuoja beveik 150 000 eksponatų.",
-      "Čia eksponuojamos tiek istorinės, tiek šiuolaikinės fotografijos parodos. Kolekcijoje – senos fotokameros, stiklo negatyvai, albumai ir dokumentai, atskleidžiantys Lietuvos fotografijos istoriją nuo pat jos pradžios.",
-      "2014 metais modernizuotame muziejuje organizuojamos parodos, susitikimai su autoriais, edukaciniai užsiėmimai. Tai privaloma vieta kiekvienam fotografijos mėgėjui."
+      "Vienintelis specializuotas fotografijos meno muziejus Lietuvoje. Saugo beveik 150 000 eksponat\u0173.",
+      "\u010Cia eksponuojamos istorin\u0117s ir \u0161iuolaikin\u0117s fotografijos parodos.",
+      "Muziejuje organizuojamos parodos, susitikimai su autoriais ir edukaciniai u\u017Esi\u0117mimai."
     ],
-    address: "Vilniaus g. 140, Šiauliai",
-    funFact: "Muziejuje saugoma viena seniausių fotografijų Lietuvoje, daryta dar 1860-aisiais metais."
+    address: "Vilniaus g. 140, \u0160iauliai",
+    funFact: "Muziejuje saugoma viena seniausi\u0173 fotografij\u0173 Lietuvoje, daryta 1860-aisiais."
   },
 
   "laikrodis-gaidys": {
@@ -183,30 +174,26 @@ const OBJECTS = {
     image: "img/lankomos-vietos/laikrodis-gaidys.jpg",
     youtube: "",
     description: [
-      "Mechaninis laikrodis su metaliniu gaidžiu – vienas žinomiausių ir mylimiausių Šiaulių simbolių pėsčiųjų bulvare. Kas valandą gaidys „pragysta" ir suploja sparnais, sukeldamas šypsenas praeivių veiduose.",
-      "Laikrodis buvo pastatytas kaip miesto puošmena ir greitai tapo populiariausia pasimatymų vieta Šiauliuose. „Susitinkam prie gaidžio" – ši frazė žinoma kiekvienam šiauliečiui.",
-      "Mechaninis gaidys yra tikras inžinerijos šedevras – jo mechanizmas veikia patikimai jau daugelį metų. Laikrodis yra mėgstamiausias fotografų objektas ir neatsiejama bulvaro dalis."
+      "Mechaninis laikrodis su metaliniu gaid\u017Eiu \u2013 vienas \u017Einomiausi\u0173 \u0160iauli\u0173 simboli\u0173 p\u0117s\u010Di\u0173j\u0173 bulvare.",
+      "Kas valand\u0105 gaidys pragysta ir suploja sparnais.",
+      "Laikrodis tapo populiariausia pasimatymu vieta \u0160iauliuose."
     ],
-    address: "Vilniaus g., Šiauliai",
-    funFact: "„Susitinkam prie gaidžio" – populiariausia frazė Šiauliuose jau kelis dešimtmečius!"
+    address: "Vilniaus g., \u0160iauliai",
+    funFact: "Susitinkam prie gaid\u017Eio \u2013 populiariausia fraz\u0117 \u0160iauliuose jau kelis de\u0161imtme\u010Dius!"
   },
 
-  // ==========================================
-  // PRAMONĖ (6)
-  // ==========================================
-
   "ruta": {
-    title: "Saldainių fabrikas Rūta",
+    title: "Saldaini\u0173 fabrikas R\u016Bta",
     category: "pramone",
     image: "img/pramone/ruta.jpg",
     youtube: "N4WXD-OTbDY",
     description: [
-      "Legendinis Šiaulių saldainių fabrikas, veikiantis nuo 1913 metų – vienas seniausių saldainių gamintojų Lietuvoje. Per daugiau nei šimtą metų „Rūta" tapo tikra Šiaulių legenda.",
-      "Čia gimsta visiems pažįstami saldainiai – „Kregždutė", „Miško nykštukas", „Pieniška" ir daugybė kitų, kuriuos myli visos kartos. Fabriko šokolado muziejus siūlo interaktyvias edukacijas, kur galite patys gaminti saldainius.",
-      "Senajame fabriko pastate veikia „Rūtos" šokolado muziejus ir parduotuvė. Tokio muziejaus pavydėti galėtų net Belgijos meistrai! Tai privaloma vieta kiekvienam, apsilankiusiam Šiauliuose."
+      "Legendinis \u0160iauli\u0173 saldaini\u0173 fabrikas, veikiantis nuo 1913 met\u0173.",
+      "\u010Cia gimsta visiems pa\u017E\u012Fstami saldainiai \u2013 Kregzdute, Misko nykstukas ir daugyb\u0117 kit\u0173.",
+      "Senajame fabriko pastate veikia sokolado muziejus ir parduotuve."
     ],
-    address: "Tilžės g. 133, Šiauliai",
-    funFact: "„Rūta" per metus pagamina apie 6000 tonų saldumynų – tai maždaug 2 kg kiekvienam Lietuvos gyventojui!"
+    address: "Til\u017E\u0117s g. 133, \u0160iauliai",
+    funFact: "R\u016Bta per metus pagamina apie 6000 ton\u0173 saldumyn\u0173!"
   },
 
   "baltik-vairas": {
@@ -215,54 +202,54 @@ const OBJECTS = {
     image: "img/pramone/baltik-vairas.jpg",
     youtube: "",
     description: [
-      "Didžiausia dviračių gamykla Baltijos šalyse, veikianti nuo 1948 metų. Per savo istoriją „Baltik vairas" pagamino milijonus dviračių, kurie važinėjo visoje Sovietų Sąjungoje.",
-      "Šiandien įmonė yra modernizuota ir naudoja pažangiausias technologijas. Gamykla eksportuoja dviračius į daugiau nei 30 pasaulio šalių – nuo Skandinavijos iki Japonijos.",
-      "„Baltik vairas" yra ne tik pramonės milžinas, bet ir svarbi Šiaulių identiteto dalis – ne veltui mieste yra Dviračių muziejus, o dviratis yra vienas miesto simbolių."
+      "Did\u017Eiausia dvira\u010Di\u0173 gamykla Baltijos \u0161alyse, veikianti nuo 1948 met\u0173.",
+      "\u0160iandien \u012Fmon\u0117 eksportuoja dvira\u010Dius \u012F daugiau nei 30 pasaulio \u0161ali\u0173.",
+      "Baltik vairas yra svarbi \u0160iauli\u0173 identiteto dalis."
     ],
-    address: "Pramonės g. 3, Šiauliai",
-    funFact: "Sovietmečiu „Baltik vairas" gamino iki 1 milijono dviračių per metus!"
+    address: "Pramon\u0117s g. 3, \u0160iauliai",
+    funFact: "Sovietme\u010Diu Baltik vairas gamino iki 1 milijono dvira\u010Di\u0173 per metus!"
   },
 
   "grafu-baldai": {
-    title: "Grafų baldai",
+    title: "Graf\u0173 baldai",
     category: "pramone",
     image: "img/pramone/grafu-baldai.jpg",
     youtube: "kxAHUA78kfw",
     description: [
-      "Šiaulių baldų gamybos įmonė, gaminanti aukštos kokybės baldus iš natūralios medienos. „Grafų baldai" sujungia tradicinį amatą su šiuolaikinėmis technologijomis.",
-      "Įmonė gamina elegantiškus baldus tiek Lietuvos, tiek užsienio rinkoms. Kiekvienas baldas yra rankų darbo šedevras – nuo klasikinių iki modernių dizainų.",
-      "Gamykloje galima užsisakyti ekskursiją ir pamatyti, kaip iš paprastos medienos gimsta meno kūriniai. Tai puiki proga suprasti, kodėl Šiauliai garsėja savo amatininkais."
+      "\u0160iauli\u0173 bald\u0173 gamybos \u012Fmon\u0117, gaminanti auk\u0161tos kokyb\u0117s baldus i\u0161 naturalios medienos.",
+      "Kiekvienas baldas yra rank\u0173 darbo \u0161edevras.",
+      "Gamykloje galima u\u017Esisakyti ekskursij\u0105 ir pamatyti gamybos proces\u0105."
     ],
-    address: "Šiauliai",
-    funFact: "Vienas baldas gali turėti iki 200 detalių, kurias meistrai surinks per kelias savaites!"
+    address: "\u0160iauliai",
+    funFact: "Vienas baldas gali tur\u0117ti iki 200 detali\u0173!"
   },
 
   "oro-uostas": {
-    title: "Šiaulių oro uostas",
+    title: "\u0160iauli\u0173 oro uostas",
     category: "pramone",
     image: "img/pramone/oro-uostas.jpg",
     youtube: "",
     description: [
-      "Šiaulių tarptautinis oro uostas – vienas strategiškai svarbiausių aviacijos objektų Lietuvoje. Jo kilimo-tūpimo takas yra vienas ilgiausių regione – 3500 metrų.",
-      "Oro uostas aptarnauja tiek civilinius, tiek NATO karinius skrydžius. Šalia veikia Aviacijos bazė, kuri priima NATO oro policijos misijas Baltijos šalių oro erdvei saugoti.",
-      "Nors oro uostas daugiausia orientuotas į krovininius ir karinius skrydžius, jis turi potencialą tapti svarbiu keleivių aviacijos mazgu regione."
+      "\u0160iauli\u0173 tarptautinis oro uostas \u2013 vienas strategi\u0161kai svarbiausi\u0173 aviacijos objekt\u0173 Lietuvoje.",
+      "Oro uostas aptarnauja tiek civilinius, tiek NATO karinius skryd\u017Eius.",
+      "Kilimo-t\u016Bpimo takas yra vienas ilgiausi\u0173 regione \u2013 3500 metr\u0173."
     ],
-    address: "Oro uosto g., Šiauliai",
-    funFact: "Šiaulių oro uosto kilimo-tūpimo takas yra pakankamai ilgas, kad galėtų priimti didžiausius pasaulio lėktuvus!"
+    address: "Oro uosto g., \u0160iauliai",
+    funFact: "Kilimo-t\u016Bpimo takas gali priimti did\u017Eiausius pasaulio l\u0117ktuvus!"
   },
 
   "doloop": {
-    title: "Doloop (Putokšnis)",
+    title: "Doloop (Putok\u0161nis)",
     category: "pramone",
     image: "img/pramone/doloop.jpg",
     youtube: "Ze0I3VJzDRs",
     description: [
-      "Šiuolaikiška gėrimų gamybos įmonė, gaminanti natūralius sulčių gėrimus „Putokšnis" prekės ženklu. Tai viena inovatyviausių gamybos įmonių Šiauliuose.",
-      "„Doloop" naudoja pažangias gamybos technologijas ir orientuojasi į sveiką bei kokybišką produkciją. Įmonė gamina PET butelius ir pilsto įvairius gėrimus.",
-      "Gamykloje galima užsisakyti ekskursiją ir pamatyti visą gamybos procesą – nuo žaliavų iki gatavos produkcijos. Tai puiki proga suprasti šiuolaikinę pramonę iš vidaus."
+      "\u0160iuolaiki\u0161ka g\u0117rim\u0173 gamybos \u012Fmon\u0117, gaminanti nat\u016Bralius sul\u010Di\u0173 g\u0117rimus.",
+      "Doloop naudoja pa\u017Eangias gamybos technologijas.",
+      "Gamykloje galima u\u017Esisakyti ekskursij\u0105 ir pamatyti vis\u0105 gamybos proces\u0105."
     ],
-    address: "Šiauliai",
-    funFact: "Gamykla per dieną gali pagaminti iki 100 000 butelių gėrimų!"
+    address: "\u0160iauliai",
+    funFact: "Gamykla per dien\u0105 gali pagaminti iki 100 000 buteli\u0173 g\u0117rim\u0173!"
   },
 
   "salda": {
@@ -271,12 +258,12 @@ const OBJECTS = {
     image: "img/pramone/salda.jpg",
     youtube: "QMViCplVE8s",
     description: [
-      "Ilgametę istoriją turinti Šiaulių trikotažo ir tekstilės įmonė. „Salda" gamina aukštos kokybės megztinius ir trikotažo gaminius, kurie vertinami už natūralias medžiagas.",
-      "Įmonė savo produkciją eksportuoja į daugelį Europos šalių. Gaminiai pasižymi kokybišku siuvimu, natūraliomis medžiagomis ir šiuolaikiniais dizainais.",
-      "„Salda" yra puikus pavyzdys, kaip tradicinė Šiaulių tekstilės pramonė sėkmingai prisitaiko prie šiuolaikinės rinkos reikalavimų ir konkuruoja tarptautiniu lygiu."
+      "Ilgamet\u0119 istorij\u0105 turinti \u0160iauli\u0173 trikota\u017Eo ir tekstil\u0117s \u012Fmon\u0117.",
+      "Salda gamina auk\u0161tos kokyb\u0117s megztinius ir trikota\u017Eo gaminius.",
+      "Produkcija eksportuojama \u012F daugiau nei 15 Europos \u0161ali\u0173."
     ],
-    address: "Šiauliai",
-    funFact: "„Salda" produkcija parduodama daugiau nei 15 Europos šalių!"
+    address: "\u0160iauliai",
+    funFact: "Salda produkcija parduodama daugiau nei 15 Europos \u0161ali\u0173!"
   }
 
 };
