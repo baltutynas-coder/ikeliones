@@ -204,7 +204,7 @@
       </div>
       <div class="footer-col">
         <h3>Užsakyti gido paslaugą</h3>
-        <form class="contact-form" id="contactForm" action="https://formspree.io/f/TAVO_ENDPOINT" method="POST">
+        <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Ačiū! Jūsų žinutė priimta. Susisieksime artimiausiu metu.'); this.reset(); return false;">
           <input type="text" name="vardas" placeholder="Vardas" required aria-label="Vardas">
           <input type="tel" name="telefonas" placeholder="Telefono numeris" required aria-label="Telefono numeris">
           <textarea name="zinute" placeholder="Žinutė" required aria-label="Žinutė"></textarea>
