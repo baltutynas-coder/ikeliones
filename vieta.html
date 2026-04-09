@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Virtualios kelionės Šiauliuose – lankytinos vietos ir pramonės objektai.">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>Virtualios kelionės Šiauliuose</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Vieta.html specifiniai stiliai */
+    .vieta-hero {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 40px 0;
+    }
+
+    .vieta-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--yellow);
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin-bottom: 25px;
+      transition: opacity 0.3s;
+    }
+
+    .vieta-back:hover {
+      opacity: 0.7;
+    }
+
+    .vieta-image-wrapper {
+      max-width: 400px;
+      margin: 0 auto 30px;
+    }
+
+    .vieta-image {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--yellow);
+    }
+
+    .vieta-content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 40px 50px;
+    }
+
+    .vieta-title {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .vieta-category {
+      text-align: center;
+      color: var(--yellow);
+      font-size: 0.8rem;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    .vieta-description p {
+      color: #555;
+      font-size: 0.9rem;
+      line-height: 1.9;
+      margin-bottom: 18px;
+    }
+
+    html.high-contrast .vieta-description p {
+      color: #ccc;
+    }
+
+    html.high-contrast .vieta-title {
+      color: #f0f0f0;
+    }
+
+    .vieta-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 30px;
+      padding-top: 25px;
+      border-top: 2px solid var(--light-gray);
+    }
+
+    .vieta-info-box {
+      padding: 20px;
+      background: var(--light-gray);
+      border-radius: 8px;
+    }
+
+    html.high-contrast .vieta-info-box {
+      background: #333;
+    }
+
+    .vieta-info-box h4 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .vieta-info-box p {
+      font-size: 0.85rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    html.high-contrast .vieta-info-box p {
+      color: #ccc;
+    }
+
+    .vieta-video {
+      max-width: 700px;
+      margin: 35px auto 0;
+    }
+
+    .vieta-video iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .vieta-nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 40px 50px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .vieta-nav a {
+      padding: 8px 18px;
+      background: var(--light-gray);
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #666;
+      transition: all 0.3s;
+    }
+
+    .vieta-nav a:hover,
+    .vieta-nav a.active {
+      background: var(--yellow);
+      color: var(--white);
+    }
+
+    html.high-contrast .vieta-nav a {
+      background: #333;
+      color: #ccc;
+    }
+
+    /* Kai objektas nerastas */
+    .vieta-error {
+      text-align: center;
+      padding: 80px 40px;
+    }
+
+    .vieta-error h2 {
+      font-size: 2rem;
+      color: var(--yellow);
+      margin-bottom: 15px;
+    }
+
+    .vieta-error p {
+      color: #999;
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: 600px) {
+      .vieta-hero { padding: 25px 15px 0; }
+      .vieta-content { padding: 0 15px 40px; }
+      .vieta-image-wrapper { max-width: 250px; }
+      .vieta-info { grid-template-columns: 1fr; }
+      .vieta-nav { padding: 0 15px 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <nav class="sidebar" id="sidebar" aria-label="Pagrindinis meniu">
+    <button class="sidebar-close" id="sidebarClose" aria-label="Uždaryti meniu">✕</button>
+    <div class="sidebar-logo">
+      <a href="index.html"><img src="img/logo.png" alt="ikelionės logotipas" loading="lazy"></a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-header">
+        <a href="lankomos-vietos.html" class="sidebar-title-link">Lankomos vietos Šiauliuose</a>
+        <button class="sidebar-toggle" aria-label="Išskleisti sąrašą"><span class="sidebar-arrow">▾</span></button>
+      </div>
+      <div class="sidebar-links" id="sidebarLankomos">
+        <a href="vieta.html?id=katedra">Šv. Apaštalų Petro ir Pauliaus katedra</a>
+        <a href="vieta.html?id=cerkve">Šiaulių Šv. Apaštalų Petro ir Povilo cerkvė</a>
+        <a href="vieta.html?id=gelezine-lape">Geležinė lapė</a>
+        <a href="vieta.html?id=frenkelio-vila">Chaimo Frenkelio vila-muziejus</a>
+        <a href="vieta.html?id=jurgio-baznycia">Šiaulių Šv. Jurgio bažnyčia</a>
+        <a href="vieta.html?id=lojolos-baznycia">Šiaulių Šv. Ignaco Lojolos bažnyčia</a>
+        <a href="vieta.html?id=paminklas-popieziui">Paminklas popiežiui Jonui Pauliui II</a>
+        <a href="vieta.html?id=turgaus-aikste">Turgaus aikštė</a>
+        <a href="vieta.html?id=dviraciu-muziejus">Dviračių muziejus</a>
+        <a href="vieta.html?id=auksinis-berniukas">Auksinis berniukas</a>
+        <a href="vieta.html?id=zubovu-dvaras">Grafų Zubovų dvaras</a>
+        <a href="vieta.html?id=fotografijos-muziejus">Fotografijos muziejus</a>
+        <a href="vieta.html?id=laikrodis-gaidys">Laikrodis gaidys</a>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-header">
+        <a href="pramone.html" class="sidebar-title-link">Pažintis su pramoniniais Šiauliais</a>
+        <button class="sidebar-toggle" aria-label="Išskleisti sąrašą"><span class="sidebar-arrow">▾</span></button>
+      </div>
+      <div class="sidebar-links" id="sidebarPramone">
+        <a href="vieta.html?id=ruta">Saldainių fabrikas Rūta</a>
+        <a href="vieta.html?id=baltik-vairas">Baltik vairas</a>
+        <a href="vieta.html?id=grafu-baldai">Grafų baldai</a>
+        <a href="vieta.html?id=oro-uostas">Šiaulių oro uostas</a>
+        <a href="vieta.html?id=doloop">Doloop (Putokšnis)</a>
+        <a href="vieta.html?id=salda">Salda</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="ikelionės – virtualios kelionės Šiauliuose" loading="lazy">
+    </a>
+    <div class="header-right">
+      <div class="access-buttons">
+        <button class="access-btn" id="fontDecrease" aria-label="Sumažinti šriftą">A-</button>
+        <button class="access-btn" id="fontIncrease" aria-label="Padidinti šriftą">A+</button>
+        <button class="access-btn" id="contrastToggle" aria-label="Didelis kontrastas">☾</button>
+      </div>
+      <button class="hamburger" id="menuBtn" aria-label="Atidaryti meniu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- Turinys bus įkeltas per JavaScript -->
+  </main>
+
+  <div class="footer-quote">
+    <p><em>Įprastas keliones darome ypatingas. Mes esame jūsų asmeninis unikalių potyrių vadovas. Žinome, ką geriausia pamatyti mūsų mieste ir ko negalima praleisti lankantis Šiauliuose.</em></p>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Sukurta keliautojams</h3>
+        <p>Pasinaudokite mūsų suasmenintomis rekomendacijomis prieš kelionę ir jos metu, kad gautumėte geriausios kelionės patirties.</p>
+        <p>Tel. informacijai <a href="tel:+37067608524" class="phone">+370 676 08524</a></p>
+      </div>
+      <div class="footer-col">
+        <h3>Užsakyti gido paslaugą</h3>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/TAVO_ENDPOINT" method="POST">
+          <input type="text" name="vardas" placeholder="Vardas" required aria-label="Vardas">
+          <input type="tel" name="telefonas" placeholder="Telefono numeris" required aria-label="Telefono numeris">
+          <textarea name="zinute" placeholder="Žinutė" required aria-label="Žinutė"></textarea>
+          <div class="form-consent">
+            <input type="checkbox" id="formConsent" required>
+            <label for="formConsent">Sutinku su <a href="privatumo-politika.html" target="_blank" rel="noopener noreferrer">privatumo politika</a></label>
+          </div>
+          <button type="submit" class="btn-send">Siųsti</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <h3>Lankytinos vietos Šiauliuose</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="img/lankomos-vietos/katedra.jpg" alt="Katedra" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/gelezine-lape.jpg" alt="Geležinė lapė" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/frenkelio-vila.jpg" alt="Frenkelio vila" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/dviraciu-muziejus.jpg" alt="Dviračių muziejus" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/auksinis-berniukas.jpg" alt="Auksinis berniukas" loading="lazy"></div>
+          <div class="gallery-item"><img src="img/lankomos-vietos/laikrodis-gaidys.jpg" alt="Laikrodis gaidys" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ikelionės. Visos teisės saugomos.</span>
+      <a href="privatumo-politika.html">Privatumo politika</a>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script>
+    /* ============================================
+       VIETA.HTML – turinio generavimas
+       ============================================ */
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var id = params.get('id');
+      var main = document.getElementById('mainContent');
+
+      // Jei ID nerastas arba objektas neegzistuoja
+      if (!id || !OBJECTS[id]) {
+        main.innerHTML = '<div class="vieta-error">' +
+          '<h2>Objektas nerastas</h2>' +
+          '<p>Atsiprašome, bet toks objektas neegzistuoja.</p>' +
+          '<a href="index.html" class="vieta-back">← Grįžti į pagrindinį</a>' +
+          '</div>';
+        return;
+      }
+
+      var obj = OBJECTS[id];
+      var categoryLabel = obj.category === 'lankomos-vietos' ? 'Lankomos vietos Šiauliuose' : 'Pažintis su pramoniniais Šiauliais';
+      var backLink = obj.category === 'lankomos-vietos' ? 'lankomos-vietos.html' : 'pramone.html';
+
+      // Atnaujinti puslapio title ir meta
+      document.title = obj.title + ' – Virtualios kelionės Šiauliuose';
+      var metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.content = obj.description[0];
+
+      // Generuoti turinį
+      var html = '';
+
+      // Grįžimo nuoroda + paveikslėlis
+      html += '<div class="vieta-hero">';
+      html += '<a href="' + backLink + '" class="vieta-back">← Grįžti atgal</a>';
+      html += '<div class="vieta-image-wrapper">';
+      html += '<img class="vieta-image" src="' + obj.image + '" alt="' + obj.title + '" loading="lazy">';
+      html += '</div>';
+      html += '</div>';
+
+      // Pavadinimas + kategorija
+      html += '<div class="vieta-content">';
+      html += '<h1 class="vieta-title">' + obj.title + '</h1>';
+      html += '<p class="vieta-category">' + categoryLabel + '</p>';
+
+      // Aprašymas
+      html += '<div class="vieta-description">';
+      obj.description.forEach(function(p) {
+        html += '<p>' + p + '</p>';
+      });
+      html += '</div>';
+
+      // Info blokai
+      html += '<div class="vieta-info">';
+      if (obj.address) {
+        html += '<div class="vieta-info-box">';
+        html += '<h4>📍 Adresas</h4>';
+        html += '<p>' + obj.address + '</p>';
+        html += '</div>';
+      }
+      if (obj.funFact) {
+        html += '<div class="vieta-info-box">';
+        html += '<h4>💡 Ar žinojote?</h4>';
+        html += '<p>' + obj.funFact + '</p>';
+        html += '</div>';
+      }
+      html += '</div>';
+
+      // YouTube video (jei yra)
+      if (obj.youtube) {
+        html += '<div class="vieta-video">';
+        html += '<iframe src="https://www.youtube.com/embed/' + obj.youtube + '" title="' + obj.title + ' video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>';
+        html += '</div>';
+      }
+
+      html += '</div>';
+
+      // Navigacija tarp objektų
+      var keys = Object.keys(OBJECTS);
+      var sameCategory = keys.filter(function(k) { return OBJECTS[k].category === obj.category; });
+      html += '<nav class="vieta-nav" aria-label="Kiti objektai">';
+      sameCategory.forEach(function(k) {
+        var active = k === id ? ' active' : '';
+        html += '<a href="vieta.html?id=' + k + '" class="' + active + '">' + OBJECTS[k].title + '</a>';
+      });
+      html += '</nav>';
+
+      main.innerHTML = html;
+
+      // Paryškinti aktyvų meniu elementą sidebar'e
+      document.querySelectorAll('.sidebar-links a').forEach(function(a) {
+        if (a.href.includes('id=' + id)) {
+          a.style.color = '#f5b731';
+          a.style.fontWeight = '700';
+          // Atidaryti tinkamą accordion sekciją
+          var section = a.closest('.sidebar-section');
+          if (section) section.classList.add('open');
+        }
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
